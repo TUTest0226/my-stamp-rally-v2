@@ -16,7 +16,8 @@ export const authOptions: NextAuthOptions = {
         },
       },
 
-      checks: ["pkce", "state"],
+      // checks: ["pkce", "state"],
+      checks: ["state"],
     }),
   ],
   // App Routerでは、JWTコールバックで `profile` を使ってカスタム情報を渡す
